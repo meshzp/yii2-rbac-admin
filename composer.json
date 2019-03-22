@@ -1,0 +1,39 @@
+{
+    "name": "meshzp/yii2-rbac-admin",
+    "description": "RBAC Admin permission manager for Yii2",
+    "keywords": ["yii", "admin", "auth", "rbac"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Artem Khodos",
+            "email": "artemkhodos@gmail.com"
+        },
+        {
+            "name": "Yevhen Tretiak",
+            "email": "minister87@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "~2.0.7",
+        "kartik-v/yii2-date-range": "*",
+        "kartik-v/yii2-grid": "*",
+        "kartik-v/yii2-widget-datepicker": "*",
+        "sonata-project/google-authenticator": "~1.0.2",
+        "integready/yii2-pagesize-widget": "~2.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "meshzp\\rbacadmin\\": ""
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "meshzp\\rbacadmin\\commands\\ServiceController::actionUpdatePhpdoc"
+        ],
+        "post-update-cmd": [
+            "meshzp\\rbacadmin\\commands\\ServiceController::actionUpdatePhpdoc"
+        ]
+    }
+}

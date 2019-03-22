@@ -1,0 +1,68 @@
+
+.accept-button{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../img/accept.png) center center no-repeat;
+    background-size: contain;
+    float: left;
+}
+
+.decline-button{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url(../img/decline.png) center center no-repeat;
+    background-size: contain;
+    float: right;
+}
+
+.button-empty{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-right:5px;
+    font-size: 20px;
+    color: #000;
+}
+.button-empty:hover{
+    text-decoration: none;
+}
+
+.button-empty.activate{
+    color: #0d793a;
+    background-size: contain;
+}
+.button-empty.ban{
+    color: #f9b53d;
+    background-size: contain;
+}
+.button-empty.fire{
+    color: #dc0000;
+    background-size: contain;
+}
+
+
+
+.chosen-user{
+    background: lightyellow;
+}
+
+.control-user-item{
+    padding: 10px;
+    border-bottom: dotted 1px lightgrey;
+}
+
+.leftfield{
+    overflow-y: scroll;
+    max-height: 750px;
+}
+
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+
+.table-borderless tbody tr:hover{
+    background: lightgrey;
+}
